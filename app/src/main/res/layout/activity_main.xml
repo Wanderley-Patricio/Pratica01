@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/edit_message"
+        />
+
+<!--    O atributo peso (android:layout_weight) é usado para distribuir o espaço vazio-->
+<!--    entre elementos visuais. O espaço é distribuído proporcionalmente de acordo com o-->
+<!--    peso. Neste caso, a configuração de largura (“width”) que havia antes-->
+<!--    (“wrap_content”) é ignorada e portanto foi substituída por (“0pt”).-->
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/button_send"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    Identificadores (Ids) permitem referenciar objetos de outros lugares da aplicação. -->
+<!--    O símbolo @ é usado para referenciar Ids dentro de arquivos XML. Ele é seguido pelo-->
+<!--    tipo de recurso, “/” e o nome do recurso. O sinal de mais “+” indica um novo Id.-->
+
+</LinearLayout>
