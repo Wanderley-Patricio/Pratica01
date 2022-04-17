@@ -10,8 +10,9 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String EXTRA_MESSAGE = "Pratica01.MESSAGE";
     //Declarando EXTRA_MESSAGE como a variável estática na classe MainActivity
-    private static final String EXTRA_MESSAGE = "Pratica01.MESSAGE";
+    //    private static final String EXTRA_MESSAGE = "Pratica01.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
