@@ -2,4 +2,6 @@
     <string name="app_name">Pratica01</string>
     <string name="edit_message">Digite uma mensagem</string>
     <string name="button_send">Enviar</string>
+    <string name="action_search">Procurar</string>
+    <string name="action_settings">Configurar</string>
 </resources>

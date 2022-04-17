@@ -1,5 +1,6 @@
 package br.edu.ifpe.tads.pdm.pratica01;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -21,5 +22,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
         //Configurando os atributos de tamanho do texto e mensagem
         textView.setTextSize(40);
         textView.setText(message);
+
+
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
     }
 }
